@@ -6,7 +6,6 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_restful import Api, reqparse, abort, Resource, fields, marshal_with
 
 
-
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY")
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
