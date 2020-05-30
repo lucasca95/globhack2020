@@ -264,7 +264,6 @@ def createdb():
     db.session.add(rev_p4_collaborator)
 
     db.session.commit()
-    
     return f"Database restarted!"
 
 api = Api(app)
