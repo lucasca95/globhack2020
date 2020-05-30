@@ -17,6 +17,8 @@ El *problema principal* que se busca atacar, tiene que ver con la cantidad incip
 
 # Workflow
 
+A continuacion se describiran el tipo de situaciones que intentara favorecer la aplicacion y el workflow ideal de la misma.
+
 ## Una historia ilustrativa
 
 > 
@@ -30,7 +32,27 @@ Esta historia es ilustrativa de una situacion *ideal* de utilizacion de la aplic
 
 ## Paso a paso
 
-La 
+El regristro del usuario en la aplicacion. Debera definir si es un "ayudado"/"solicitante" o un "colaborador"/"ayudanrte". La eleccion de esto, al momento del registro, llevara a una experiencia de usuario completamente diferente.
+
+### El workflow de Colaborador
+
+Al loguearse, la persona vera un billboard de "quests" o "tareas" para realizar. Algunas con recompensas o premios y otras sin otra recompensa que no sea "dar las gracias". En ningun caso el intercambio podra ser economico o fundamentado en el uso de modenas. Tampoco en el intercambio o "trueque". Lo que se busca es que se intercambien "servicios", por "nada" o "algo", si es que la persona que lo publico asi lo desea.
+
+Desde este billboard, podra seleccionar cual desea completar. Podra cambiarle el estado a iniciada y empezara a correr un timer. La persona que inicio la busqueda sera notificada de que persona comenzo con esta tarea/mandado. De esta forma sabra que el pedido esta en curso. 
+
+Al finalizarse la tarea, el "colaborador" que la inicio, podra cambiarla de estado. Esto notificara al "peticionante" / "ayudado" quien sera quien podra dar por completada la misma.
+
+### El workflow del peticionador / ayudado
+
+Cualquier persona podra poner un pedido en las inmediaciones de su barrio, geolocalizandose. Desde alli, se permitira que un pedido este asociado a una direccion especifica y este restringido a una cantidad de horas o dias especificos. El pedido en cuestion, sera una lista de tareas que deberan cumplirse una a una. Luego de esto, se podra, opcionalmente proveer de una "recompensa" o "premio" por completarlo. Con lo cual, sera el peticionador quien podra tener la ultima palabra sobre cuando "la tarea esta completada".
+
+
+
+
+
+
+
+
 
 
 
