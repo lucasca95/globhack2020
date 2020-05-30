@@ -6,9 +6,11 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_restful import Api, reqparse, abort, Resource, fields, marshal_with
 
 
+
 app = Flask(__name__)
-app.secret_key = "SuperSecretKey"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://lucasca95:admin@localhost:5432/db'
+app.secret_key = os.environ.get("SECRET_KEY")
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
+
 
 db = SQLAlchemy(app)
 
@@ -288,7 +290,7 @@ class PetitionListAPI(Resource):
         petitions = Petition.query.all()
         return [p.serialize() for p in petitions]
 
-class PetitionUserAPI(Resource):
+class PetitionHelpedAPI(Resource):
     @marshal_with(petition_fields)
     def post(self, user_id):
         args = parser_petition.parse_args()
@@ -302,6 +304,11 @@ class PetitionUserAPI(Resource):
         p.helped = u
         save(p)
         return p.serialize()
+
+class PetitionCollaboratorAPI(Resource):
+    @marshal_with(petition_fields)
+    def get(self, user_id):
+        petitions = Petition.query
 
 class PetitionByNeighborhoodAPI(Resource):
     @marshal_with(petition_fields)
@@ -395,7 +402,8 @@ api.add_resource(UserHelpedListAPI,'/helped', '/helped/')
 api.add_resource(UserHelpedAPI,'/helped/<int:user_id>')
 
 api.add_resource(PetitionListAPI,'/petitions', '/petitions/')
-api.add_resource(PetitionUserAPI,'/petitions/<int:user_id>')
+api.add_resource(PetitionHelpedAPI,'/petitions/<int:user_id>')
+api.add_resource(PetitionCollaboratorAPI,'/petitions/<int:user_id>')
 api.add_resource(PetitionByNeighborhoodAPI, '/petitions/<neighborhood>')
 
 if __name__ == '__main__':
