@@ -19,6 +19,7 @@ class UserHelped(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(20))
     last_name = db.Column(db.String(20))
+    neighborhood = db.Column(db.String(100))
     birthdate = db.Column(db.DateTime)
     email = db.Column(db.String(30))
     password = db.Column(db.String(100))
@@ -29,9 +30,10 @@ class UserHelped(db.Model):
     # Relation with ReviewHelped
     reviews = db.relationship('ReviewHelped', backref='user')
 
-    def __init__(self, first_name=None, last_name=None, birthdate=None, email=None, password=None, _type=None, rating=None):
+    def __init__(self, first_name=None, last_name=None, neighborhood=None, birthdate=None, email=None, password=None, _type=None, rating=None):
         self.first_name = first_name
         self.last_name = last_name
+        self.neighborhood = neighborhood
         self.birthdate = birthdate
         self.email = email
         self.password = password
@@ -43,6 +45,7 @@ class UserHelped(db.Model):
            'id'  : self.id,
            'first_name': self.first_name,
            'last_name': self.last_name,
+           'neighborhood': self.neighborhood,
            'birthdate': self.birthdate,
            'email': self.email,
            'type': self._type,
@@ -76,6 +79,7 @@ class UserCollaborator(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String(20))
     last_name = db.Column(db.String(20))
+    neighborhood = db.Column(db.String(100))
     birthdate = db.Column(db.DateTime)
     email = db.Column(db.String(30))
     password = db.Column(db.String(100))
@@ -86,9 +90,10 @@ class UserCollaborator(db.Model):
     # Relation with ReviewCollaborator
     reviews = db.relationship('ReviewCollaborator', backref='user')
 
-    def __init__(self, first_name=None, last_name=None, birthdate=None, email=None, password=None, _type=None, rating=None):
+    def __init__(self, first_name=None, last_name=None, neighborhood=None, birthdate=None, email=None, password=None, _type=None, rating=None):
         self.first_name = first_name
         self.last_name = last_name
+        self.neighborhood = neighborhood
         self.birthdate = birthdate
         self.email = email
         self.password = password
@@ -96,10 +101,11 @@ class UserCollaborator(db.Model):
         self.rating = rating
 
     def serialize(self):
-       return {
+        return {
            'id'  : self.id,
            'first_name': self.first_name,
            'last_name': self.last_name,
+           'neighborhood': self.neighborhood,
            'birthdate': self.birthdate,
            'email': self.email,
            'type': self._type,
@@ -134,7 +140,6 @@ class Petition(db.Model):
     day = db.Column(db.DateTime)
     hour = db.Column(db.DateTime)
     status = db.Column(db.String(20))
-
     gift = db.Column(db.String(100))
 
     # Relation with UserHelped
@@ -148,17 +153,18 @@ class Petition(db.Model):
     review_collaborator = db.relationship('ReviewCollaborator', backref='petition')
 
 
-    def __init__(self, day=None, hour=None, gift=None):
+    def __init__(self, day=None, hour=None, status=None, gift=None):
         self.day = day
         self.hour = hour
+        self.status = status
         self.gift = gift
 
     def serialize(self):
-       """Return object data in easily serializeable format"""
-       return {
+        return {
            'id'  : self.id,
            'day': self.day,
            'hour': self.hour,
+           'status': self.status
            'gift': self.gift
         }
 
