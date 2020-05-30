@@ -187,5 +187,85 @@ def delete(e):
     db.session.delete(e)
     db.session.commit()
 
+
+###############################################################
+@app.route('/', methods=['GET'])
+def welcome():
+    return "SERVER RUNNING"
+###############################################################
+###############################################################
+@app.route('/dbinit', methods=['GET'])
+def createdb():
+    db.drop_all()
+    db.create_all()
+    u_lucas = UserCollaborator('Lucas', 'Camino', 'CityBell', date.fromisoformat('1995-12-13'), 'lucascamino@test.com',
+                '123456789', 'C', 5)
+
+    u_claudia = UserCollaborator('Claudia', 'Genchi', 'CityBell', date.fromisoformat('1967-02-24'), 'claudiagenchi@test.com',
+                '123456789', 'C', 5)
+    
+    u_agustina = UserCollaborator('Agustina', 'Camino', 'CityBell', date.fromisoformat('2000-03-22'), 'agustinacamino@test.com',
+                '123456789', 'C', 5)
+
+    u_abuelo = UserHelped('Abuelo', 'Abuelo', 'CityBell', date.fromisoformat('1937-06-06'), 'abuelo@test.com', '123456789', 'H', 5)
+    u_abuela = UserHelped('Abuela', 'Abuela', 'CityBell', date.fromisoformat('1937-06-06'), 'abuela@test.com', '123456789', 'H', 5)
+
+
+    p_2 = Petition(datetime.now(), datetime.now(), 'done', 'Doy torta!')
+    p_3 = Petition(datetime.now(), datetime.now(), 'done', 'Agradezco con 250 pesos!')
+    p_4 = Petition(datetime.now(), datetime.now(), 'done', 'MUCHAS GRACIAS!')
+    
+    rev_p2_helped = ReviewHelped('Fue muy amable', 8.0)
+    rev_p2_collaborator = ReviewCollaborator('Prometió torta y cumplió', 7.0)
+
+    rev_p3_helped = ReviewHelped('Rechazó el dinero', 8.0)
+    rev_p3_collaborator = ReviewCollaborator('Rechacé el dinero', 8.0)
+
+    rev_p4_helped = ReviewHelped('Una persona mal educada', 2.0)
+    rev_p4_collaborator = ReviewCollaborator('', 4.0)
+
+    # Connect objects
+    u_lucas.petitions.append(p_2)
+    u_abuela.petitions.append(p_2)
+    rev_p2_collaborator.petition = p_2
+    rev_p2_helped.petition = p_2
+    rev_p2_collaborator.user = u_lucas
+    rev_p2_helped.user = u_abuela
+    #
+    u_claudia.petitions.append(p_3)
+    u_abuelo.petitions.append(p_3)
+    rev_p3_collaborator.petition = p_3
+    rev_p3_helped.petition = p_3
+    rev_p3_collaborator.user = u_claudia
+    rev_p3_helped.user = u_abuelo
+    #
+    u_lucas.petitions.append(p_4)
+    u_abuela.petitions.append(p_4)
+    rev_p4_collaborator.petition = p_4
+    rev_p4_helped.petition = p_4
+    rev_p4_collaborator.user = u_agustina
+    rev_p4_helped.user = u_abuela
+
+    db.session.add(u_lucas)
+    db.session.add(u_claudia)
+    db.session.add(u_agustina)
+    db.session.add(u_abuelo)
+    db.session.add(u_abuela)
+    
+    db.session.add(p_2)
+    db.session.add(p_3)
+    db.session.add(p_4)
+
+    db.session.add(rev_p2_helped)
+    db.session.add(rev_p2_collaborator)
+    db.session.add(rev_p3_helped)
+    db.session.add(rev_p3_collaborator)
+    db.session.add(rev_p4_helped)
+    db.session.add(rev_p4_collaborator)
+
+    db.session.commit()
+    
+    return f"Database restarted!"
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
