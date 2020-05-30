@@ -41,6 +41,7 @@ class UserHelped(db.Model):
         self.rating = rating
 
     def serialize(self):
+       """Return object data in easily serializeable format"""
        return {
            'id'  : self.id,
            'first_name': self.first_name,
@@ -127,7 +128,6 @@ class ReviewCollaborator(db.Model):
         self.rating = rating
 
     def serialize(self):
-       """Return object data in easily serializeable format"""
        return {
            'id'  : self.id,
            'comment': self.comment,
@@ -164,9 +164,11 @@ class Petition(db.Model):
            'id'  : self.id,
            'day': self.day,
            'hour': self.hour,
-           'status': self.status
+           'status': self.status,
            'gift': self.gift
         }
+
+######################################
 
 ######################################
 ###### DB Access
@@ -186,6 +188,126 @@ def save(e):
 def delete(e):
     db.session.delete(e)
     db.session.commit()
+    
+######################################
+
+######################################
+###### API Resources
+# UserHelped
+parser_user_helped = reqparse.RequestParser()
+parser_user_helped.add_argument('first_name')
+parser_user_helped.add_argument('last_name')
+parser_user_helped.add_argument('neighborhood')
+parser_user_helped.add_argument('birthdate')
+parser_user_helped.add_argument('email')
+parser_user_helped.add_argument('password')
+parser_user_helped.add_argument('type')
+parser_user_helped.add_argument('rating')
+user_helped_fields = {
+    'id': fields.Integer,
+    'first_name': fields.String,
+    'last_name': fields.String,
+    'neighborhood': fields.String,
+    # 'birthdate': fields.DateTime(dt_format='iso8601'),
+    'birthdate': fields.String,
+    'email': fields.String,
+    'password': fields.String,
+    'type': fields.String,
+    'rating': fields.Float
+}
+
+# UserCollaborator
+parser_user_collaborator = reqparse.RequestParser()
+parser_user_collaborator.add_argument('first_name')
+parser_user_collaborator.add_argument('last_name')
+parser_user_collaborator.add_argument('neighborhood')
+parser_user_collaborator.add_argument('birthdate')
+parser_user_collaborator.add_argument('email')
+parser_user_collaborator.add_argument('password')
+parser_user_collaborator.add_argument('type')
+parser_user_collaborator.add_argument('rating')
+user_collaborator_fields = {
+    'id': fields.Integer,
+    'first_name': fields.String,
+    'last_name': fields.String,
+    'neighborhood': fields.String,
+    # 'birthdate': fields.DateTime(dt_format='iso8601'),
+    'birthdate': fields.String,
+    'email': fields.String,
+    'password': fields.String,
+    'type': fields.String,
+    'rating': fields.Float
+}
+
+# Petition
+parser_petition = reqparse.RequestParser()
+parser_petition.add_argument('day')
+parser_petition.add_argument('hour')
+parser_petition.add_argument('status')
+parser_petition.add_argument('gift')
+petition_fields = {
+    'id': fields.Integer,
+    'day': fields.String,
+    'hour': fields.String,
+    'status': fields.String,
+    'gift': fields.String
+}
+
+
+class UserHelpedListAPI(Resource):
+    @marshal_with(user_helped_fields)
+    def get(self):
+        users = UserHelped.query.all()
+        return [u.serialize() for u in users]
+
+    @marshal_with(user_helped_fields)
+    def post(self):
+        args = parser_user_helped.parse_args()
+        u = UserHelped(
+            args['first_name'], 
+            args['last_name'], 
+            date.fromisoformat(args['birthdate']), 
+            args['email'], 
+            args['password'], 
+            args['type'],
+            args['rating']
+        )
+        save(u)
+        return u.serialize()
+    
+class UserHelpedAPI(Resource):
+    @marshal_with(user_helped_fields)
+    def delete(self, user_id):
+        aux = findUserHelpedById(user_id)
+        delete(findUserHelpedById(user_id))
+        return aux.serialize()
+
+class PetitionListAPI(Resource):
+    @marshal_with(petition_fields)
+    def get(self):
+        petitions = Petition.query.all()
+        return [p.serialize() for p in petitions]
+
+class PetitionUserAPI(Resource):
+    @marshal_with(petition_fields)
+    def post(self, user_id):
+        args = parser_petition.parse_args()
+        p = Petition(
+            args['day'],
+            args['hour'],
+            args['status'],
+            args['gift']
+        )
+        u = findUserHelpedById(user_id)
+        p.helped = u
+        save(p)
+        return p.serialize()
+
+class PetitionByNeighborhoodAPI(Resource):
+    @marshal_with(petition_fields)
+    def get(self, neighborhood):
+        petitons = Petition.query.filter_by(neighborhood=neighborhood).all()
+        return [p.serialize() for p in petitions]
 
 
 ###############################################################
@@ -264,7 +386,9 @@ def createdb():
     db.session.add(rev_p4_collaborator)
 
     db.session.commit()
+    
     return f"Database restarted!"
+###############################################################
 
 api = Api(app)
 api.add_resource(UserHelpedListAPI,'/helped', '/helped/')
