@@ -267,5 +267,13 @@ def createdb():
     
     return f"Database restarted!"
 
+api = Api(app)
+api.add_resource(UserHelpedListAPI,'/helped', '/helped/')
+api.add_resource(UserHelpedAPI,'/helped/<int:user_id>')
+
+api.add_resource(PetitionListAPI,'/petitions', '/petitions/')
+api.add_resource(PetitionUserAPI,'/petitions/<int:user_id>')
+api.add_resource(PetitionByNeighborhoodAPI, '/petitions/<neighborhood>')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
