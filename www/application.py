@@ -162,5 +162,24 @@ class Petition(db.Model):
            'gift': self.gift
         }
 
+######################################
+###### DB Access
+def findUserHelpedById(user_id):
+    u = UserHelped.query.get(user_id)
+    print(f'\n\nUser:\n{u}\n')
+    if (u):
+        return u
+    else:
+        abort(404, error=f'UserHelped with id {user_id} not found')
+
+def save(e):
+    db.session.add(e)
+    db.session.commit()
+    return e
+
+def delete(e):
+    db.session.delete(e)
+    db.session.commit()
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
