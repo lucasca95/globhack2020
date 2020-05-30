@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+
+ web:
+  build: .
+  restart: always
+  container_name: web_python
+  ports:
+   - "8888:3333"
+  volumes:
+   - "./www/:/www/"
+ 
+ db_postgresql:
+  image: postgres
+  container_name: db_postgres
+  restart: always
+  ports:
+   - "5432:5432"
+  volumes:
+   - db_postgres_vol:/var/lib/postgresql/data
+  environment: 
+   POSTGRES_PASSWORD: superRootPassword
+   POSTGRES_USER: lucasca95
+   POSTGRES_PASSWORD: admin
+   POSTGRES_DB: db
+
+ control:
+  image: adminer
+  depends_on:
+   - db_postgresql
+  ports:
+   - "80:8080"
+  restart: always
+
+volumes:
+ db_postgres_vol:
