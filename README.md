@@ -73,9 +73,12 @@ Se implementaran:
 Luego de esto, se pondra la aplicacion piloto en las manos de los ciudadanos y se monitoreara su uso y como se comportan en relacion a las tareas, los barrios y las situaciones de cada uno. La aplicacion ira creciendo desde alli, en funcionalidad (general o geolocalizada) y en su facilidad de uso.
 
 # Integrantes
-[Antonio](https://github.com/stranger01)
-[Lucas Camino](https://github.com/lucascan95)
-[Ezequiel H. Martinez](https://github.com/exemartinez)
+
+> [Antonio](https://github.com/stranger01)
+
+> [Lucas Camino](https://github.com/lucascan95)
+
+> [Ezequiel H. Martinez](https://github.com/exemartinez)
 
 
 
