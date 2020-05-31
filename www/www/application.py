@@ -349,8 +349,7 @@ class PetitionCollaboratorAPI(Resource):
         u_collaborator = findUserCollaboratorById(user_id)
         print(f'\n\nCollaborator:\n{u_collaborator.serialize()}\n', file=sys.stderr)
         petitions = Petition.query.filter_by(neighborhood=u_collaborator.neighborhood, status='waiting')
-        for p in petitions:
-            print(f'\n\nPetition:\n{p.serialize()}\n', file=sys.stderr)
+        return [p.serialize() for p in petitions]
 
 class PetitionByNeighborhoodAPI(Resource):
     @marshal_with(petition_fields)

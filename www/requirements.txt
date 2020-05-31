@@ -1,0 +1,16 @@
+# Instalar las dependencias del proyecto utilizadas por
+# Python-Flask con:
+#   pip3 install -r requirements.txt
+
+# Flask microframework
+Flask
+# SQLAlchemy base
+SQLAlchemy
+# PostgreSQL driver
+psycopg2-binary
+# Read environment variables from ".env" file
+python-dotenv
+# FlaskRESTFul - API
+flask_restful
+# SQLAlchemy Flask ORM
+Flask-SQLAlchemy
