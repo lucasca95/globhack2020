@@ -18,4 +18,8 @@
 
     
     El equipo AbrazAr considera un detalle no menor que la autenticación de usuarios debe realizarse de forma segura y propone utilizar una base de datos del Estado, la cual para el caso argentino puede ser el ANSES. Así los usuarios sabrán feacientemente quién es la persona que está detrás de el dispositivo movil con el que se están conectando.
+    
+    
+    El kit de tecnologías que el equipo propuso utilizar en esta hackatón incluye: PostgreSQL para base de datos, Flask como framework de desarrollo sencillo del lado del servidor, con módulos de extensión Flask-RestFUL para la implementación de una API REST y Flask-SQLAlchemy, como ORM para el vínculo con la base de datos. Los datos serán consultados por el front-end, que es la mencionada aplicación, implementada en Android.
+    
 
