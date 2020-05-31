@@ -97,14 +97,4 @@ Tecnologias involucradas:
 
 # Agradecimientos especiales a
 
-> [Agustina Camino](https://www.linkedin.com/in/mar%C3%ADa-agustina-camino-927269186/)
-
-
-
-
-
-
-
-
-
-
+> [Agustina Camino](https://www.linkedin.com/in/mar%C3%ADa-agustina-camino-927269186/), por aportar al proyecto con el diseño de la Landing-Page y el ícono de la aplicación.
