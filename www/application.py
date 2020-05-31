@@ -8,8 +8,10 @@ from flask_restful import Api, reqparse, abort, Resource, fields, marshal_with
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY")
+print(f'\n\nDRIVER:\n{os.environ.get("DATABASE_URL")}\n', file=sys.stderr)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DATABASE_URL")
-
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql+psycopg2://lucasca95:admin@db_postgresql:5432/db'
+print(f'\n\nSQL_DRIVER:\n{app.config["SQLALCHEMY_DATABASE_URI"]}\n', file=sys.stderr)
 
 db = SQLAlchemy(app)
 
@@ -141,6 +143,7 @@ class Petition(db.Model):
     day = db.Column(db.DateTime)
     hour = db.Column(db.DateTime)
     status = db.Column(db.String(20))
+    neighborhood = db.Column(db.String(100))
     gift = db.Column(db.String(100))
 
     # Relation with UserHelped
@@ -154,10 +157,11 @@ class Petition(db.Model):
     review_collaborator = db.relationship('ReviewCollaborator', backref='petition')
 
 
-    def __init__(self, day=None, hour=None, status=None, gift=None):
+    def __init__(self, day=None, hour=None, status=None, neighborhood=None, gift=None):
         self.day = day
         self.hour = hour
         self.status = status
+        self.neighborhood = neighborhood
         self.gift = gift
 
     def serialize(self):
@@ -166,6 +170,7 @@ class Petition(db.Model):
            'day': self.day,
            'hour': self.hour,
            'status': self.status,
+           'neighborhood': self.neighborhood,
            'gift': self.gift
         }
 
@@ -180,6 +185,14 @@ def findUserHelpedById(user_id):
         return u
     else:
         abort(404, error=f'UserHelped with id {user_id} not found')
+    
+def findUserCollaboratorById(user_id):
+    u = UserCollaborator.query.get(user_id)
+    print(f'\n\nUser:\n{u}\n')
+    if (u):
+        return u
+    else:
+        abort(404, error=f'UserCollaborator with id {user_id} not found')
 
 def save(e):
     db.session.add(e)
@@ -245,12 +258,14 @@ parser_petition = reqparse.RequestParser()
 parser_petition.add_argument('day')
 parser_petition.add_argument('hour')
 parser_petition.add_argument('status')
+parser_petition.add_argument('neighborhood')
 parser_petition.add_argument('gift')
 petition_fields = {
     'id': fields.Integer,
     'day': fields.String,
     'hour': fields.String,
     'status': fields.String,
+    'neighborhood': fields.String,
     'gift': fields.String
 }
 
@@ -266,7 +281,8 @@ class UserHelpedListAPI(Resource):
         args = parser_user_helped.parse_args()
         u = UserHelped(
             args['first_name'], 
-            args['last_name'], 
+            args['last_name'],
+            args['neighborhood'],
             date.fromisoformat(args['birthdate']), 
             args['email'], 
             args['password'], 
@@ -275,13 +291,35 @@ class UserHelpedListAPI(Resource):
         )
         save(u)
         return u.serialize()
-    
+
 class UserHelpedAPI(Resource):
     @marshal_with(user_helped_fields)
     def delete(self, user_id):
         aux = findUserHelpedById(user_id)
         delete(findUserHelpedById(user_id))
         return aux.serialize()
+
+class UserCollaboratorListAPI(Resource):
+    @marshal_with(user_collaborator_fields)
+    def get(self):
+        users = UserCollaborator.query.all()
+        return [u.serialize() for u in users]
+
+    @marshal_with(user_collaborator_fields)
+    def post(self):
+        args = parser_user_helped.parse_args()
+        u = UserCollaborator(
+            args['first_name'], 
+            args['last_name'], 
+            args['neighborhood'],
+            date.fromisoformat(args['birthdate']), 
+            args['email'], 
+            args['password'], 
+            args['type'],
+            args['rating']
+        )
+        save(u)
+        return u.serialize()
 
 class PetitionListAPI(Resource):
     @marshal_with(petition_fields)
@@ -297,6 +335,7 @@ class PetitionHelpedAPI(Resource):
             args['day'],
             args['hour'],
             args['status'],
+            args['neighborhood'],
             args['gift']
         )
         u = findUserHelpedById(user_id)
@@ -307,7 +346,11 @@ class PetitionHelpedAPI(Resource):
 class PetitionCollaboratorAPI(Resource):
     @marshal_with(petition_fields)
     def get(self, user_id):
-        petitions = Petition.query
+        u_collaborator = findUserCollaboratorById(user_id)
+        print(f'\n\nCollaborator:\n{u_collaborator.serialize()}\n', file=sys.stderr)
+        petitions = Petition.query.filter_by(neighborhood=u_collaborator.neighborhood, status='waiting')
+        for p in petitions:
+            print(f'\n\nPetition:\n{p.serialize()}\n', file=sys.stderr)
 
 class PetitionByNeighborhoodAPI(Resource):
     @marshal_with(petition_fields)
@@ -339,9 +382,10 @@ def createdb():
     u_abuela = UserHelped('Abuela', 'Abuela', 'CityBell', date.fromisoformat('1937-06-06'), 'abuela@test.com', '123456789', 'H', 5)
 
 
-    p_2 = Petition(datetime.now(), datetime.now(), 'done', 'Doy torta!')
-    p_3 = Petition(datetime.now(), datetime.now(), 'done', 'Agradezco con 250 pesos!')
-    p_4 = Petition(datetime.now(), datetime.now(), 'done', 'MUCHAS GRACIAS!')
+    p_2 = Petition(datetime.now(), datetime.now(), 'done', ' ','Doy torta!')
+    p_3 = Petition(datetime.now(), datetime.now(), 'done', ' ', 'Agradezco con 250 pesos!')
+    p_4 = Petition(datetime.now(), datetime.now(), 'done', ' ', 'MUCHAS GRACIAS')
+    p_5_waiting = Petition(datetime.now(), datetime.now(), 'waiting', ' ', 'Gracias!!!!!!')
     
     rev_p2_helped = ReviewHelped('Fue muy amable', 8.0)
     rev_p2_collaborator = ReviewCollaborator('Prometió torta y cumplió', 7.0)
@@ -355,6 +399,7 @@ def createdb():
     # Connect objects
     u_lucas.petitions.append(p_2)
     u_abuela.petitions.append(p_2)
+    p_2.neighborhood = u_abuela.neighborhood
     rev_p2_collaborator.petition = p_2
     rev_p2_helped.petition = p_2
     rev_p2_collaborator.user = u_lucas
@@ -362,6 +407,7 @@ def createdb():
     #
     u_claudia.petitions.append(p_3)
     u_abuelo.petitions.append(p_3)
+    p_3.neighborhood = u_abuelo.neighborhood
     rev_p3_collaborator.petition = p_3
     rev_p3_helped.petition = p_3
     rev_p3_collaborator.user = u_claudia
@@ -369,10 +415,14 @@ def createdb():
     #
     u_lucas.petitions.append(p_4)
     u_abuela.petitions.append(p_4)
+    p_4.neighborhood = u_abuela.neighborhood
     rev_p4_collaborator.petition = p_4
     rev_p4_helped.petition = p_4
     rev_p4_collaborator.user = u_agustina
     rev_p4_helped.user = u_abuela
+    #
+    u_abuelo.petitions.append(p_5_waiting)
+    p_5_waiting.neighborhood = u_abuelo.neighborhood
 
     db.session.add(u_lucas)
     db.session.add(u_claudia)
@@ -383,6 +433,7 @@ def createdb():
     db.session.add(p_2)
     db.session.add(p_3)
     db.session.add(p_4)
+    db.session.add(p_5_waiting)
 
     db.session.add(rev_p2_helped)
     db.session.add(rev_p2_collaborator)
@@ -401,9 +452,18 @@ api.add_resource(UserHelpedListAPI,'/helped', '/helped/')
 api.add_resource(UserHelpedAPI,'/helped/<int:user_id>')
 
 api.add_resource(PetitionListAPI,'/petitions', '/petitions/')
-api.add_resource(PetitionHelpedAPI,'/petitions/<int:user_id>')
-api.add_resource(PetitionCollaboratorAPI,'/petitions/<int:user_id>')
+
+# PetitionHelpedAPI: genera un pedido de ayuda y se lo asocia al 
+# usuario ayudado que hizo el request.
+api.add_resource(PetitionHelpedAPI,'/petitions/helped/<int:user_id>')
+
+# PetitionCollaboratorAPI: devuelve las peticiones que están pendientes en el rango
+# de cuadras donde vive el usuario colaborador.
+api.add_resource(PetitionCollaboratorAPI,'/petitions/collaborator/<int:user_id>')
+
+# PetitionByNeighborhoodAPI: devuelve todas las peticiones que correspondan al 
+# barrio indicado.
 api.add_resource(PetitionByNeighborhoodAPI, '/petitions/<neighborhood>')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=3333)
