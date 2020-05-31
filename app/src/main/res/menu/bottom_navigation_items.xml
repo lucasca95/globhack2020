@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_item1"
+        android:icon="@drawable/ic_work_black_24dp"
+        android:title="Casa" />
+    <item
+        android:id="@+id/action_item2"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Buscar" />
+    <item
+        android:id="@+id/action_item3"
+        android:icon="@drawable/ic_perm_identity_black_24dp"
+        android:title="Perfil" />
+</menu>

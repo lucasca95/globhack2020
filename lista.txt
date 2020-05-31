@@ -1,0 +1,14 @@
+                {"Logística","Alcaldías","Aseguradoras","Asistente,Automotriz","Banca y finanzas", "Bienes raíces", "Bodega","Call Center","Comercio","Computación",
+                "Comunicaciones y periodismo","Confección","Contabilidad","Coordinador","Educación","Empleo de temporada","Gestión de Proyectos","Jardineria","Cuidado de animales",
+                "Industria de alimentos","Construcción","Farmaceutica","Manufactura","Industria pesquera","Industria textil","Investigación",
+                "Mantenimiento","Medio ambiente","Salud ocupacional","Mercadeo","ONG","Organizaciones Religiosas","Panadería","Publicidad","Recursos humanos","Restaurantes","Salud",
+                "Servicio a Domicilio","Servicios de limpieza","Mantenimiento residencia","Servicios de Mercadeo","Servicios de Publicidad","Mecanicos",
+                "Mantenimiento de equipo electrónico","Servicios de Salud","Servicios de Seguridad","Transporte de personas","Servicios de Turismo","Servicios legales",
+                "Superviso","Mensajeria","Tecnología","Trabajo Social","Transporte","Ventas"}
+ 
+  	  	  	  	 
+  	  	  	  	 
+
+ 
+
+ 

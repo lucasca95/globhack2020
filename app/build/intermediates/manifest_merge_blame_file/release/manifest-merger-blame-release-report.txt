@@ -1,0 +1,243 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.abrazar.ar.pk"
+4    android:versionCode="2"
+5    android:versionName="2.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CALL_PHONE" />
+11-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:5:5-69
+11-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:5:22-66
+12    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+12-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:6:5-98
+12-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:6:22-95
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:7:5-67
+13-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:8:5-79
+14-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:9:5-81
+15-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:9:22-78
+16
+17    <!-- Include required permissions for Google Maps API to run. -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.android.gms:play-services-maps:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\5923b98fd99d99abe2d400b7a716a6aa\play-services-maps-10.0.1\AndroidManifest.xml:19:5-78
+18-->[com.google.android.gms:play-services-maps:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\5923b98fd99d99abe2d400b7a716a6aa\play-services-maps-10.0.1\AndroidManifest.xml:19:22-76
+19
+20    <uses-feature
+20-->[com.google.android.gms:play-services-maps:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\5923b98fd99d99abe2d400b7a716a6aa\play-services-maps-10.0.1\AndroidManifest.xml:21:5-77
+21        android:glEsVersion="0x00020000"
+21-->[com.google.android.gms:play-services-maps:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\5923b98fd99d99abe2d400b7a716a6aa\play-services-maps-10.0.1\AndroidManifest.xml:21:19-51
+22        android:required="true" />
+22-->[com.google.android.gms:play-services-maps:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\5923b98fd99d99abe2d400b7a716a6aa\play-services-maps-10.0.1\AndroidManifest.xml:21:52-75
+23
+24    <uses-permission android:name="android.permission.WAKE_LOCK" />
+24-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:22:5-67
+24-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:22:22-65
+25    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+25-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:22:5-81
+25-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:22:22-79
+26
+27    <permission
+27-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:24:5-109
+28        android:name="com.abrazar.ar.pk.permission.C2D_MESSAGE"
+28-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:24:17-71
+29        android:protectionLevel="signature" />
+29-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:24:72-107
+30
+31    <uses-permission android:name="com.abrazar.ar.pk.permission.C2D_MESSAGE" />
+31-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:26:5-78
+31-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:26:22-76
+32
+33    <application
+33-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:11:5-44:19
+34        android:allowBackup="true"
+34-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:12:9-35
+35        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+35-->[com.android.support:support-compat:28.0.0] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\57ec45c9b5e0c1f6a21eac064e202ea3\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+36        android:extractNativeLibs="false"
+37        android:icon="@mipmap/argentina"
+37-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:13:9-41
+38        android:label="@string/app_name"
+38-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:14:9-41
+39        android:roundIcon="@mipmap/argentina"
+39-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:15:9-46
+40        android:supportsRtl="true"
+40-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:16:9-35
+41        android:theme="@style/AppTheme" >
+41-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:17:9-40
+42        <activity android:name="com.abrazar.ar.pk.SelectionActivity" />
+42-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:18:9-64
+42-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:18:19-52
+43        <activity android:name="com.abrazar.ar.pk.ForgotPasswordActivity" />
+43-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:19:9-60
+43-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:19:19-57
+44
+45        <meta-data
+45-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:21:9-23:71
+46            android:name="com.google.android.geo.API_KEY"
+46-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:22:13-58
+47            android:value="AIzaSyDvuF-jD5SX4_DoC8435VJzsB0JUaFp2rU" />
+47-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:23:13-68
+48        <meta-data
+48-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:24:9-26:69
+49            android:name="com.google.android.gms.version"
+49-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:25:13-58
+50            android:value="@integer/google_play_services_version" />
+50-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:26:13-66
+51
+52        <activity android:name="com.abrazar.ar.pk.MainActivity" >
+52-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:28:9-34:20
+52-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:28:19-47
+53            <intent-filter>
+53-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:29:13-33:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:30:17-69
+54-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:30:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:32:17-77
+56-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:32:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity android:name="com.abrazar.ar.pk.FeedActivity" />
+59-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:35:9-50
+59-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:35:19-47
+60        <activity android:name="com.abrazar.ar.pk.AddJobActivity" />
+60-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:36:9-52
+60-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:36:19-49
+61        <activity android:name="com.abrazar.ar.pk.SingleJobView" />
+61-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:37:9-51
+61-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:37:19-48
+62        <activity android:name="com.abrazar.ar.pk.MapLoadActivity" />
+62-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:38:9-53
+62-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:38:19-50
+63        <activity android:name="com.abrazar.ar.pk.EditJobActivity" />
+63-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:39:9-53
+63-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:39:19-50
+64        <activity android:name="com.abrazar.ar.pk.SingleProfileActivity" />
+64-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:40:9-59
+64-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:40:19-56
+65        <activity android:name="com.abrazar.ar.pk.EditProfileActivity" />
+65-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:41:9-57
+65-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:41:19-54
+66        <activity android:name="com.abrazar.ar.pk.LoginActivity" />
+66-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:42:9-51
+66-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:42:19-48
+67        <activity android:name="com.abrazar.ar.pk.RegisterActivity" />
+67-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:43:9-54
+67-->C:\Users\josea\Desktop\Abrazar\app\src\main\AndroidManifest.xml:43:19-51
+68        <activity
+68-->[com.google.android.gms:play-services-base:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\ed497032107f98fc90f0b5097d661c4d\play-services-base-10.0.1\AndroidManifest.xml:19:9-172
+69            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+69-->[com.google.android.gms:play-services-base:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\ed497032107f98fc90f0b5097d661c4d\play-services-base-10.0.1\AndroidManifest.xml:19:19-85
+70            android:exported="false"
+70-->[com.google.android.gms:play-services-base:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\ed497032107f98fc90f0b5097d661c4d\play-services-base-10.0.1\AndroidManifest.xml:19:146-170
+71            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+71-->[com.google.android.gms:play-services-base:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\ed497032107f98fc90f0b5097d661c4d\play-services-base-10.0.1\AndroidManifest.xml:19:86-145
+72
+73        <receiver
+73-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:25:7-26:18
+74            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+74-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:25:17-89
+75            android:enabled="true"
+75-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:25:90-112
+76            android:exported="false" >
+76-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:25:113-137
+77        </receiver>
+78        <receiver
+78-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:27:7-31:18
+79            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+79-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:27:17-104
+80            android:enabled="true"
+80-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:27:162-184
+81            android:permission="android.permission.INSTALL_PACKAGES" >
+81-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:27:105-161
+82            <intent-filter>
+82-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:28:11-30:27
+83                <action android:name="com.android.vending.INSTALL_REFERRER" />
+83-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:29:15-76
+83-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:29:23-74
+84            </intent-filter>
+85        </receiver>
+86
+87        <service
+87-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:32:7-137
+88            android:name="com.google.android.gms.measurement.AppMeasurementService"
+88-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:32:16-87
+89            android:enabled="true"
+89-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:32:88-110
+90            android:exported="false" />
+90-->[com.google.firebase:firebase-analytics:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\43ddd24aca3494f827f1f33de40f9049\firebase-analytics-10.0.1\AndroidManifest.xml:32:111-135
+91
+92        <receiver
+92-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:30:9-36:20
+93            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+93-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:30:19-84
+94            android:exported="true"
+94-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:30:85-108
+95            android:permission="com.google.android.c2dm.permission.SEND" >
+95-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:30:109-169
+96            <intent-filter>
+96-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:31:13-35:29
+97                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+97-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:32:17-80
+97-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:32:25-78
+98                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+98-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:33:17-85
+98-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:33:25-83
+99
+100                <category android:name="com.abrazar.ar.pk" />
+100-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:34:17-60
+100-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:34:27-58
+101            </intent-filter>
+102        </receiver>
+103        <!--
+104 Internal (not exported) receiver used by the app to start its own exported services
+105             without risk of being spoofed.
+106        -->
+107        <receiver
+107-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:40:9-119
+108            android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"
+108-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:40:19-92
+109            android:exported="false" />
+109-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:40:93-117
+110        <!--
+111 FirebaseInstanceIdService performs security checks at runtime,
+112             no need for explicit permissions despite exported="true"
+113        -->
+114        <service
+114-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:44:9-48:19
+115            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+115-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:44:18-82
+116            android:exported="true" >
+116-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:44:83-106
+117            <intent-filter android:priority="-500" >
+117-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:45:13-47:29
+117-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:45:28-51
+118                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+118-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:46:17-79
+118-->[com.google.firebase:firebase-iid:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\043449ea515a5bdf5e1ad2293e728722\firebase-iid-10.0.1\AndroidManifest.xml:46:25-77
+119            </intent-filter>
+120        </service>
+121
+122        <provider
+122-->[com.google.firebase:firebase-common:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\7ad98443dcdfdb79be69bfe6dc6b4f0d\firebase-common-10.0.1\AndroidManifest.xml:6:9-194
+123            android:name="com.google.firebase.provider.FirebaseInitProvider"
+123-->[com.google.firebase:firebase-common:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\7ad98443dcdfdb79be69bfe6dc6b4f0d\firebase-common-10.0.1\AndroidManifest.xml:6:79-143
+124            android:authorities="com.abrazar.ar.pk.firebaseinitprovider"
+124-->[com.google.firebase:firebase-common:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\7ad98443dcdfdb79be69bfe6dc6b4f0d\firebase-common-10.0.1\AndroidManifest.xml:6:19-78
+125            android:exported="false"
+125-->[com.google.firebase:firebase-common:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\7ad98443dcdfdb79be69bfe6dc6b4f0d\firebase-common-10.0.1\AndroidManifest.xml:6:144-168
+126            android:initOrder="100" />
+126-->[com.google.firebase:firebase-common:10.0.1] C:\Users\josea\.gradle\caches\transforms-2\files-2.1\7ad98443dcdfdb79be69bfe6dc6b4f0d\firebase-common-10.0.1\AndroidManifest.xml:6:169-192
+127    </application>
+128
+129</manifest>

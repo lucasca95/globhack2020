@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "applicationId": "com.abrazar.ar.pk",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "PROCESSED_RES"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 2,
+        "versionName": "2.0",
+        "outputFile": "app-release-unsigned.apk",
+        "fullName": "release",
+        "baseName": "release",
+        "dirName": ""
+      },
+      "path": "resources-release.ap_",
+      "properties": {
+        "packageId": "com.abrazar.ar.pk",
+        "split": "",
+        "minSdkVersion": "26"
+      }
+    }
+  ]
+}

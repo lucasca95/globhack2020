@@ -1,0 +1,290 @@
+[
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_caselogoblue.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\caselogoblue.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_maillogo.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\maillogo.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search_black_24dp.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_work_black_24dp.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\drawable\\ic_work_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_profilepic.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\profilepic.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_save_white_24dp.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_save_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_single_profile.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_single_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_profile.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_add_white_24dp.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_add_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_feed.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_feed.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_biologo.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\biologo.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_recyclerviewimage.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\recyclerviewimage.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_locationmarker.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\locationmarker.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_selection.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_selection.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_reviewlogo2.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\reviewlogo2.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_add_white_24dp.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-mdpi\\ic_add_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_worhublogo.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\worhublogo.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_profilejob_list.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\profilejob_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navigation_items.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\menu\\bottom_navigation_items.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_save_white_24dp.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-hdpi\\ic_save_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_search_row.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\search_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_addajob.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\addajob.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_email.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\email.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_save_white_24dp.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_save_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\menu_save_menu.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\menu\\save_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_review_row.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\review_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_map_load.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_map_load.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_searchlogo.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\searchlogo.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_add_white_24dp.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-hdpi\\ic_add_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_lanzador.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\lanzador.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_perm_identity_black_24dp.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\drawable\\ic_perm_identity_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_request_favor.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\fragment_request_favor.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\drawable_lanzador.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\drawable\\lanzador.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_caselogo.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\caselogo.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_outline.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\drawable\\input_outline.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_finallogo.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\finallogo.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_argentina.jpg.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\argentina.jpg"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_job.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\fragment_job.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_single_job_view.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_single_job_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_save_white_24dp.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xhdpi\\ic_save_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_four.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\four.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_add_white_24dp.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xhdpi\\ic_add_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_two.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\two.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_calllogo.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\calllogo.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_msglogo.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\msglogo.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_job_row.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\job_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_save_white_24dp.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-mdpi\\ic_save_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_add_white_24dp.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_add_white_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\drawable_nav_item_colors.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\drawable\\nav_item_colors.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_job.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_add_job.xml"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_websitelogo.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\websitelogo.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_three.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\three.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_homelogo.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\homelogo.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_one.png.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\one.png"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_background.jpeg.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\mipmap-xxxhdpi\\background.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_edit_job.xml.flat",
+        "source": "C:\\Users\\josea\\Desktop\\Abrazar\\app\\src\\main\\res\\layout\\activity_edit_job.xml"
+    }
+]

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "352956003351",
+    "firebase_url": "https://abrazar-8406b.firebaseio.com",
+    "project_id": "abrazar-8406b",
+    "storage_bucket": "abrazar-8406b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352956003351:android:98cd8efa62aa2de872d852",
+        "android_client_info": {
+          "package_name": "com.abrazar.ar.pk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352956003351-jp2tgi3bda12dk8fj8ubn0leehb5rfg2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abrazar.ar.pk",
+            "certificate_hash": "92acb536fe4899c37b40c332955b116b75f00005"
+          }
+        },
+        {
+          "client_id": "352956003351-b45uqmukmsol2qurd7v16rm3qc6sn8k1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMIqaMOnCrdZJu6bNghQ_BJSr63k3_5lE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352956003351-b45uqmukmsol2qurd7v16rm3qc6sn8k1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
