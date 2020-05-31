@@ -79,19 +79,25 @@ La solucion comenzaria como una app android que obtiene y transacciona datos con
 Tecnologias involucradas:
 
 * Docker
-* Kubernetes
 * Python
 * Flask
 * Java for Android
 * Firebase
+* PostgreSQL
 
 # Integrantes
 
 > [Antonio Perez](https://github.com/stranger01)
 
-> [Lucas Camino](https://github.com/lucascan95)
+> [Lucas A. Camino](https://github.com/lucasca95)
 
 > [Ezequiel H. Martinez](https://github.com/exemartinez)
+
+> [Claudia M. Genchi](https://www.linkedin.com/in/claudia-genchi-84047811/)
+
+# Agradecimientos especiales a
+
+> [Agustina Camino](https://www.linkedin.com/in/mar%C3%ADa-agustina-camino-927269186/)
 
 
 
