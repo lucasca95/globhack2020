@@ -72,9 +72,22 @@ Se implementaran:
 
 Luego de esto, se pondra la aplicacion piloto en las manos de los ciudadanos y se monitoreara su uso y como se comportan en relacion a las tareas, los barrios y las situaciones de cada uno. La aplicacion ira creciendo desde alli, en funcionalidad (general o geolocalizada) y en su facilidad de uso.
 
+### Arquitectura propuesta
+
+La solucion comenzaria como una app android que obtiene y transacciona datos contra una API REST. Luego evolucionaria hacia otras plataformas. La intencion ha sido mantener nuestras opciones abiertas en terminos de escalabilidad y flexibilidad. Basicamente, la aplicacion mobile es uno de los front-ends por los que se accederia a la aplicacion. Para temas de DevOps, hemos pensado en Docker, Kubernetes y Jenkins. En todos estos casos la aplicacion se adaptaria a diferentes contextos y crecimiento.
+
+Tecnologias involucradas:
+
+* Docker
+* Kubernetes
+* Python
+* Flask
+* Java for Android
+* Firebase
+
 # Integrantes
 
-> [Antonio](https://github.com/stranger01)
+> [Antonio Perez](https://github.com/stranger01)
 
 > [Lucas Camino](https://github.com/lucascan95)
 
