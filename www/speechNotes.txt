@@ -1,0 +1,12 @@
+
+##################
+
+    Atento a la situación de "Pandemia por COVID-19" que atraviesa la población, y las medidas preventivas de aislamiento social y obligatorio decretadas por el Poder Ejecutivo, con el asesoramiento del Ministerio de Salud,
+    diseñamos un sistema sencillo y seguro que conduce a brindar ayuda a aquellas personas vulnerables que no cuentan con la asistencia de un familiar, o un tercero, para llevar a cabo actividades cotidianas que, de hacerlas por sí mismas, las expondría a un alto riesgo de contagio.
+    
+    La aplicación consiste en relacionar, de forma segura y solidaria, a usuarios "Colaboradores" y "Solicitantes" a través teléfonos celulares. 
+    
+    Los usuarios solicitantes, al acceder, podrán llenar un formulario para generar un pedido de ayuda, incorporando en él, la lista de elementos que necesitan. Al registrarse el pedido se almacenará con ubicación del hogar donde se hizo el pedido.
+    Por otro lado, los usuarios colaboradores, al ingresar, verán sólo el listado de peticiones pendientes que estén próximas a su hogar, en un radio de 5 cuadras.
+    
+    El equipo AbrazAr considera que la autenticación de usuarios debe realizarse de forma segura y propone utilizar una base de datos del Estado, como por ejemplo, el ANSES.
